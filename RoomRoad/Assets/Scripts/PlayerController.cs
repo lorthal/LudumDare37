@@ -3,13 +3,22 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-	// Use this for initialization
+    [SerializeField]
+    private float accleration, rotationSpeed;
+
+    private Rigidbody rb;
+    private float horizontral, vertical;
+
 	void Start () {
-	
+        rb = GetComponent<Rigidbody>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
-	
+
+        horizontral = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+
+        rb.AddForce(transform.forward * vertical * accleration);
+        rb.transform.Rotate(Vector3.up, horizontral * rotationSpeed);
 	}
 }
