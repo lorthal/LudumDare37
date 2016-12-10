@@ -10,6 +10,7 @@ public class SpeedBoostController : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
+
         if (startTrigger.GetComponent<BoostTriggerController>().IsActive())
             if (collider.gameObject.tag == "Player")
             {
