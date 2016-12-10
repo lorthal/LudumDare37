@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnergyController : MonoBehaviour {
 
-    float energyMaxAmount = 100.0f;
+    public float energyMaxAmount = 100.0f;
     float energyCurrentAmount;
 
 	// Use this for initialization
@@ -16,8 +16,8 @@ public class EnergyController : MonoBehaviour {
         energyCurrentAmount -= Time.deltaTime;
         if (energyCurrentAmount <= 0)
             Debug.Log("Rozladowany XD");
-
-        Debug.Log(energyCurrentAmount);
+        /*else
+            Debug.Log(energyCurrentAmount);*/
 	}
 
     public void RechargeBattery()
