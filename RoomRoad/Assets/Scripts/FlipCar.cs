@@ -34,6 +34,7 @@ public class FlipCar : MonoBehaviour {
                 rb.transform.rotation = Quaternion.Euler(targetRot);
                 yield return new WaitForSeconds(1.0f);
             }
+            yield return null;
         }
         
     }

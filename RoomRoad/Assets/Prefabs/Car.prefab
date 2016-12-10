@@ -303,6 +303,9 @@ GameObject:
   - 114: {fileID: 114000013696433828}
   - 114: {fileID: 114000010147386672}
   - 114: {fileID: 114000012943697480}
+  - 114: {fileID: 114000010921657892}
+  - 114: {fileID: 114000012439124876}
+  - 114: {fileID: 114000011209671424}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -1934,6 +1937,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000010921657892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012562851552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1842408d1e7b8a645b44ebb453dedfde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 0}
+  jumpValue: 10
+--- !u!114 &114000011209671424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012562851552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91dde8da00c59e4a9d44d8ed6dd7376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energyMaxAmount: 100
 --- !u!114 &114000011215682872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1985,6 +2013,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 2}
   skidParticles: {fileID: 198000011222036314}
+--- !u!114 &114000012439124876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012562851552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61401f3f37eb9064cb544833647a69e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012498362264
 MonoBehaviour:
   m_ObjectHideFlags: 1
