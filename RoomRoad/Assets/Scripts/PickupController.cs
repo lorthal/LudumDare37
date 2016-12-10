@@ -7,11 +7,11 @@ public class PickupController : MonoBehaviour {
     {
         if (collider.gameObject.tag == "Player")
         {
-            PickUp(collider.GetComponent<PlayerController>());
+            PickUp(collider.gameObject);
         }
     }
 
-    void PickUp(PlayerController player)
+    void PickUp(GameObject player)
     {
         Debug.Log("Picked up!");
     }

@@ -7,11 +7,11 @@ public class SpeedBoostController : MonoBehaviour {
     {
         if (collider.gameObject.tag == "Player")
         {
-            BoostSpeed(collider.GetComponent<PlayerController>());
+            BoostSpeed(collider.gameObject);
         }
     }
 
-    void BoostSpeed(PlayerController player)
+    void BoostSpeed(GameObject player)
     {
         Debug.Log("Player boost...");
     }

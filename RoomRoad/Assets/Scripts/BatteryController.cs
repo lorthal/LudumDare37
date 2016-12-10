@@ -7,12 +7,13 @@ public class BatteryController : MonoBehaviour {
     {
         if(collider.gameObject.tag == "Player")
         {
-            Recharge(collider.GetComponent<PlayerController>());
+            Recharge(collider.gameObject);
         }
     }
 
-    void Recharge(PlayerController player)
+    void Recharge(GameObject player)
     {
         Debug.Log("Player is being recharged...");
+        player.GetComponent<EnergyController>().RechargeBattery();
     }
 }
