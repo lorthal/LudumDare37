@@ -18,7 +18,6 @@ public class EnergyBarController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         fillAmt = 2-energyController.energyMaxAmount / energyController.GetEnergyAmount();
-        Debug.Log(fillAmt);
         EnergyBarObj.fillAmount= fillAmt;
 	}
 }
