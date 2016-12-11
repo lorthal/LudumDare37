@@ -5,6 +5,7 @@ public class EnergyController : MonoBehaviour {
 
     public float energyMaxAmount = 15f;
     float energyCurrentAmount;
+    bool discharged = false;
 
 	// Use this for initialization
 	void Start () {
@@ -15,9 +16,7 @@ public class EnergyController : MonoBehaviour {
 	void Update () {
         energyCurrentAmount -= Time.deltaTime;
         if (energyCurrentAmount <= 0)
-            Debug.Log("Rozladowany XD");
-        /*else
-            Debug.Log(energyCurrentAmount);*/
+            discharged = true;
 	}
 
     public void RechargeBattery()
@@ -28,5 +27,9 @@ public class EnergyController : MonoBehaviour {
     public float GetEnergyAmount()
     {
         return energyCurrentAmount;
+    }
+    public bool IsDischarged()
+    {
+        return discharged;
     }
 }
