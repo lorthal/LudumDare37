@@ -241,16 +241,6 @@ Prefab:
       value: 
       objectReference: {fileID: 13400000, guid: 67db31eead11e8d6d00011d98d76c639,
         type: 2}
-    - target: {fileID: 114000013942331646, guid: 11bd529156d6c514da167094e6fa93f7,
-        type: 2}
-      propertyPath: m_CentreOfMassOffset.y
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013942331646, guid: 11bd529156d6c514da167094e6fa93f7,
-        type: 2}
-      propertyPath: m_CentreOfMassOffset.z
-      value: -0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11bd529156d6c514da167094e6fa93f7, type: 2}
   m_IsPrefabParent: 0
@@ -677,7 +667,7 @@ GameObject:
   - 23: {fileID: 1658332830}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
