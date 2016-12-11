@@ -3,8 +3,9 @@ using System.Collections;
 
 public class CarJumpController : MonoBehaviour {
     
-    public float jumpValue = 100;
+    public float jumpValue = 10;
     float jumpCooldown = 2.0f;
+    public GameObject[] tires;
 
     enum JumpState { isJumping, Idle}
     JumpState currentState;
@@ -13,22 +14,36 @@ public class CarJumpController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         currentState = JumpState.Idle;
+        isGrounded = true;
         StartCoroutine(Jump());
+        
 	}
 
-    //make sure u replace "floor" with your gameobject name.on which player is standing
-    void OnTriggerEnter(Collider coll)
+    void Update()
     {
-        if (coll.gameObject.name == "floor")
+        Debug.Log(isGrounded.ToString());
+    }
+
+    //make sure u replace "floor" with your gameobject name.on which player is standing
+    void OnTriggerStay(Collider coll)
+    {
+        if (coll.gameObject.tag == "floor")
         {
-            isGrounded = true;
+            foreach (var i in tires)
+            {
+                if (i.GetComponent<WheelJumpTrigger>().GetCollided() == false)
+                    break;
+
+                isGrounded = true;
+            }
+            
         }
     }
 
     //consider when character is jumping .. it will exit collision.
     void OnTriggerExit(Collider coll)
     {
-        if (coll.gameObject.name == "floor")
+        if (coll.gameObject.tag == "floor")
         {
             isGrounded = false;
         }
@@ -40,8 +55,9 @@ public class CarJumpController : MonoBehaviour {
         while (true)
         {
             
-            if (Input.GetButtonDown("Jump") && isGrounded == false)
+            if (Input.GetButtonDown("Jump") && isGrounded == true && currentState == JumpState.Idle)
             {
+                gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 currentState = JumpState.isJumping;
                 gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, jumpValue, 0), ForceMode.VelocityChange);
                 yield return new WaitForSeconds(jumpCooldown);
