@@ -19,11 +19,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013964292608}
-  - 114: {fileID: 114000013795864128}
   - 23: {fileID: 23000013121301202}
   - 33: {fileID: 33000010518141948}
-  - 114: {fileID: 114000010418759118}
-  - 64: {fileID: 64000014079340404}
+  - 114: {fileID: 114000011065080152}
+  - 65: {fileID: 65000012686467350}
   m_Layer: 0
   m_Name: dywan
   m_TagString: Untagged
@@ -80,19 +79,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011366191820}
   m_Mesh: {fileID: 0}
---- !u!64 &64000014079340404
-MeshCollider:
+--- !u!65 &65000012686467350
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011366191820}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 0}
---- !u!114 &114000010418759118
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114000011065080152
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -100,17 +99,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011366191820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000013795864128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011366191820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 70a26979d11d65c4586ab5e3ad095213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
