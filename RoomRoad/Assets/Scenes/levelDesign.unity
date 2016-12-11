@@ -2815,7 +2815,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-915886
+  m_Name: pb_Mesh10904
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -20355,7 +20355,7 @@ Light:
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.31
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -43639,6 +43639,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23000010674235646, guid: 71b4d3666972b484ea4911d2e92c93e8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50fe0a14968c7524cb591a72a4a42b9a, type: 2}
+    - target: {fileID: 23000011656708172, guid: 71b4d3666972b484ea4911d2e92c93e8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50fe0a14968c7524cb591a72a4a42b9a, type: 2}
+    - target: {fileID: 23000014010115846, guid: 71b4d3666972b484ea4911d2e92c93e8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50fe0a14968c7524cb591a72a4a42b9a, type: 2}
+    - target: {fileID: 23000010338281340, guid: 71b4d3666972b484ea4911d2e92c93e8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50fe0a14968c7524cb591a72a4a42b9a, type: 2}
+    - target: {fileID: 23000010985652658, guid: 71b4d3666972b484ea4911d2e92c93e8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50fe0a14968c7524cb591a72a4a42b9a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71b4d3666972b484ea4911d2e92c93e8, type: 2}
   m_IsPrefabParent: 0
@@ -44122,7 +44147,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedWireframeHidden: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
