@@ -241,6 +241,16 @@ Prefab:
       value: 
       objectReference: {fileID: 13400000, guid: 67db31eead11e8d6d00011d98d76c639,
         type: 2}
+    - target: {fileID: 114000013942331646, guid: 11bd529156d6c514da167094e6fa93f7,
+        type: 2}
+      propertyPath: m_CentreOfMassOffset.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013942331646, guid: 11bd529156d6c514da167094e6fa93f7,
+        type: 2}
+      propertyPath: m_CentreOfMassOffset.z
+      value: -0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11bd529156d6c514da167094e6fa93f7, type: 2}
   m_IsPrefabParent: 0
@@ -392,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpValue: 100
+  tires: []
 --- !u!114 &974995278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,7 +654,7 @@ Prefab:
     - target: {fileID: 114000012596389644, guid: f71e6a80b79d7b243b67a15aae447503,
         type: 2}
       propertyPath: rotationSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f71e6a80b79d7b243b67a15aae447503, type: 2}
@@ -684,7 +695,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 19efb6ddd213f794aa720bc5997a7049, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
