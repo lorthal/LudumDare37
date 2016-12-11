@@ -22,6 +22,7 @@ GameObject:
   - 33: {fileID: 33000011243067454}
   - 23: {fileID: 23000010384271192}
   - 95: {fileID: 95000010897756200}
+  - 65: {fileID: 65000012519253670}
   m_Layer: 0
   m_Name: polkaNadLozkiem
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012387121332}
   m_LocalRotation: {x: -6.211317e-15, y: 1, z: -0.00000008146034, w: -0.0000000754979}
-  m_LocalPosition: {x: 171.50247, y: 0, z: 188.50157}
+  m_LocalPosition: {x: 180, y: 115, z: -100}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -55,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e9c5999ffa847bf40991e90c9bcc1b93, type: 2}
+  - {fileID: 2100000, guid: 5a3f9d50456a2f84f9a93f107421b47b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -78,6 +79,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012387121332}
   m_Mesh: {fileID: 4300000, guid: 5b1f92f634716dc42845a1b9efac1459, type: 3}
+--- !u!65 &65000012519253670
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012387121332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 0.024999999, z: 0.15}
+  m_Center: {x: 0.75340426, y: -1.2763165e-21, z: -0.074999884}
 --- !u!95 &95000010897756200
 Animator:
   serializedVersion: 3
