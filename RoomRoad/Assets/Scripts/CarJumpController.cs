@@ -57,7 +57,7 @@ public class CarJumpController : MonoBehaviour {
             
             if (Input.GetButtonDown("Jump") && isGrounded == true && currentState == JumpState.Idle)
             {
-                gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                gameObject.GetComponent<Rigidbody>().velocity = new Vector3(gameObject.GetComponent<Rigidbody>().velocity.x, 0 , gameObject.GetComponent<Rigidbody>().velocity.z);
                 currentState = JumpState.isJumping;
                 gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, jumpValue, 0), ForceMode.VelocityChange);
                 yield return new WaitForSeconds(jumpCooldown);
