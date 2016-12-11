@@ -127,7 +127,7 @@ namespace UnityStandardAssets.Vehicles.Car
                     m_HighDecel.pitch = pitch*highPitchMultiplier*pitchMultiplier;
 
                     // get values for fading the sounds based on the acceleration
-                    float accFade = Mathf.Abs(m_CarController.AccelInput);
+                    float accFade = Mathf.Abs(m_CarController.AccelInput * 0.5f);
                     float decFade = 1 - accFade;
 
                     // get the high fade value based on the cars revs
