@@ -16,6 +16,6 @@ public class BatteryController : MonoBehaviour {
         Debug.Log("Player is being recharged...");
         player.GetComponent<EnergyController>().RechargeBattery();
 
-        Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 }
