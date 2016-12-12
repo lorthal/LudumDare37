@@ -16,6 +16,8 @@ public class EnergyController : MonoBehaviour {
 
     bool particlePlay = false;
 
+    bool RPressed = false;
+
 	// Use this for initialization
 	void Start () {
         energyCurrentAmount = energyMaxAmount;
@@ -23,26 +25,32 @@ public class EnergyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        energyCurrentAmount -= Time.deltaTime;
-        if (energyCurrentAmount <= 0)
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            discharged = true;
-            GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControl>().Discharge();
-            if (!particlePlay)
-            {
-                particleAnimator.SetTrigger("Discharged");
-                particle.Play();
-                particlePlay = true;
-            }
-            else if (particleAnimator.GetCurrentAnimatorStateInfo(0).IsName("New State 0"))
-            {   
-                particle.Stop();
-                particleAnimator.Stop();  
-            }
-            gameResultText.gameObject.SetActive(true);
-            gameResultText.text = "You Lost!";
+            RPressed = true;
         }
-
+        if (RPressed == true)
+        {
+            energyCurrentAmount -= Time.deltaTime;
+            if (energyCurrentAmount <= 0)
+            {
+                discharged = true;
+                GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControl>().Discharge();
+                if (!particlePlay)
+                {
+                    particleAnimator.SetTrigger("Discharged");
+                    particle.Play();
+                    particlePlay = true;
+                }
+                else if (particleAnimator.GetCurrentAnimatorStateInfo(0).IsName("New State 0"))
+                {   
+                    particle.Stop();
+                    particleAnimator.Stop();  
+                }
+                gameResultText.gameObject.SetActive(true);
+                gameResultText.text = "You Lost!";
+            }
+        }
 	}
 
     public void RechargeBattery()
