@@ -10,6 +10,8 @@ public class FlipCar : MonoBehaviour {
 
     //private float currentTime;
 
+    
+
     private Rigidbody rb;
 
 	void Start () {
@@ -26,7 +28,7 @@ public class FlipCar : MonoBehaviour {
     {
         while (true)
         {
-            if (Input.GetKeyDown(KeyCode.R) && !GetComponent<EnergyController>().IsDischarged())
+            if (Input.GetKeyDown(KeyCode.R) && !GetComponent<EnergyController>().IsDischarged() && Camera.main.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleCam"))
             {
                 rb.velocity = Vector3.zero;
                 Vector3 targetPos = new Vector3(rb.transform.position.x, rb.transform.position.y + 1, rb.transform.position.z);
