@@ -10431,7 +10431,7 @@ Prefab:
     - target: {fileID: 114000012651806096, guid: 11bd529156d6c514da167094e6fa93f7,
         type: 2}
       propertyPath: energyMaxAmount
-      value: 16
+      value: 160
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11bd529156d6c514da167094e6fa93f7, type: 2}
