@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityStandardAssets.Vehicles.Car;
 
 public class FlipCar : MonoBehaviour {
 
@@ -30,6 +31,10 @@ public class FlipCar : MonoBehaviour {
                 rb.velocity = Vector3.zero;
                 Vector3 targetPos = new Vector3(rb.transform.position.x, rb.transform.position.y + 1, rb.transform.position.z);
                 rb.transform.position = targetPos;
+                foreach (var item in GetComponent<CarController>().WheelColliders)
+                {
+                    item.brakeTorque = float.PositiveInfinity;
+                }
                 Vector3 targetRot = new Vector3(0, transform.eulerAngles.y, 0);
                 rb.transform.rotation = Quaternion.Euler(targetRot);
                 yield return new WaitForSeconds(1.0f);
