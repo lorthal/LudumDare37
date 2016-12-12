@@ -11,6 +11,23 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1000010833866120}
   m_IsPrefabParent: 1
+--- !u!1 &1000010086065910
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010412835584}
+  - 65: {fileID: 65000013207968858}
+  - 114: {fileID: 114000013156200102}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000010152752200
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +164,7 @@ GameObject:
   - 23: {fileID: 23000014173613212}
   - 64: {fileID: 64000011427890652}
   - 64: {fileID: 64000013606933648}
+  - 64: {fileID: 64000011911508982}
   m_Layer: 0
   m_Name: szafa
   m_TagString: Untagged
@@ -167,6 +185,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000011190225076}
   m_RootOrder: 4
+--- !u!4 &4000010412835584
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010086065910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.452, y: -0, z: 0}
+  m_LocalScale: {x: 0.13, y: 0.7, z: 0.7}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000014041093612}
+  m_RootOrder: 0
 --- !u!4 &4000010456114702
 Transform:
   m_ObjectHideFlags: 1
@@ -176,7 +207,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -102.74981, y: 30.402172, z: -114.07077}
   m_LocalScale: {x: 100, y: 100, z: 100}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -40}
   m_Children: []
   m_Father: {fileID: 4000011190225076}
   m_RootOrder: 1
@@ -222,7 +253,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -102.74981, y: 30.402172, z: -207.01703}
   m_LocalScale: {x: 101.60582, y: 100, z: 100}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 190, z: 0}
   m_Children: []
   m_Father: {fileID: 4000011190225076}
   m_RootOrder: 0
@@ -249,7 +280,8 @@ Transform:
   m_LocalPosition: {x: -134.1, y: 50.71, z: -185.7}
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 4000010412835584}
   m_Father: {fileID: 4000011190225076}
   m_RootOrder: 6
 --- !u!4 &4000014232478432
@@ -524,6 +556,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: 07ac6ae2f72914345b373164d9a7a6ae, type: 3}
+--- !u!64 &64000011911508982
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013922967888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 07ac6ae2f72914345b373164d9a7a6ae, type: 3}
 --- !u!64 &64000013606933648
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -572,6 +616,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65000013207968858
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010086065910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95000013279561988
 Animator:
   serializedVersion: 3
@@ -589,6 +645,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000013156200102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010086065910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03faeaa80bd8e1c4a8d0960210351797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 4999500
 --- !u!114 &114000013246839090
 MonoBehaviour:
   m_ObjectHideFlags: 1
