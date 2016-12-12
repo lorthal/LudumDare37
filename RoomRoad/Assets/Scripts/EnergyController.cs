@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnergyController : MonoBehaviour {
 
-    public float energyMaxAmount = 15f;
+    public float energyMaxAmount = 200f;
     float energyCurrentAmount;
     bool discharged = false;
 
