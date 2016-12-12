@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets;
 
 public class EnergyController : MonoBehaviour {
 
@@ -16,12 +17,16 @@ public class EnergyController : MonoBehaviour {
 	void Update () {
         energyCurrentAmount -= Time.deltaTime;
         if (energyCurrentAmount <= 0)
-            discharged = true;
+        {
+            Debug.Log("Trying to dscharge");
+            GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControl>().Discharge();
+        }
+
 	}
 
     public void RechargeBattery()
     {
-        energyCurrentAmount = energyMaxAmount;
+        energyCurrentAmount += 20.0f;
     }
 
     public float GetEnergyAmount()

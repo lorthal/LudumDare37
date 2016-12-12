@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+
 public class EnergyBarController : MonoBehaviour {
 
     public Image EnergyBarObj;
