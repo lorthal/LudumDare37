@@ -1,0 +1,119 @@
+fileFormatVersion: 2
+guid: e00b5eee32995fa49b6201e4b888087a
+timeCreated: 1481541553
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: noga krzesla
+    100004: noga krzesla001
+    100006: noga krzesla002
+    100008: noga krzesla003
+    100010: noga krzesla004
+    100012: oparcie
+    100014: siedzisko
+    100016: silownik\
+    100018: wspornik siedziska
+    400000: //RootNode
+    400002: noga krzesla
+    400004: noga krzesla001
+    400006: noga krzesla002
+    400008: noga krzesla003
+    400010: noga krzesla004
+    400012: oparcie
+    400014: siedzisko
+    400016: silownik\
+    400018: wspornik siedziska
+    2300000: noga krzesla
+    2300002: noga krzesla001
+    2300004: noga krzesla002
+    2300006: noga krzesla003
+    2300008: noga krzesla004
+    2300010: oparcie
+    2300012: siedzisko
+    2300014: silownik\
+    2300016: wspornik siedziska
+    3300000: noga krzesla
+    3300002: noga krzesla001
+    3300004: noga krzesla002
+    3300006: noga krzesla003
+    3300008: noga krzesla004
+    3300010: oparcie
+    3300012: siedzisko
+    3300014: silownik\
+    3300016: wspornik siedziska
+    4300000: siedzisko
+    4300002: oparcie
+    4300004: wspornik siedziska
+    4300006: silownik\
+    4300008: noga krzesla
+    4300010: noga krzesla001
+    4300012: noga krzesla002
+    4300014: noga krzesla003
+    4300016: noga krzesla004
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
