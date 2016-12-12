@@ -780,6 +780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 1518163907}
+  endButton: {fileID: 425383701}
+  aboutButton: {fileID: 971022777}
 --- !u!1 &1518163905
 GameObject:
   m_ObjectHideFlags: 0
