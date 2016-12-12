@@ -86,7 +86,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 58180e466dcf221448a2f10b60ed164d, type: 2}
+  - {fileID: 2100000, guid: 744c5cf54774cd744b401828f7dc7621, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -134,7 +134,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 75af26c8a06dae644a5ec7ce49d06a42, type: 3}
 --- !u!95 &95000013023423882
 Animator:
