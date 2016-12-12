@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+
 namespace UnityStandardAssets.Vehicles.Car
 {
     [RequireComponent(typeof(CarController))]
@@ -9,6 +10,8 @@ namespace UnityStandardAssets.Vehicles.Car
         private CarController m_Car; // the car controller we want to use
 
         public float multiplier { get; set; }
+
+        bool isDischarged = false;
 
 
         private void Awake()
@@ -25,9 +28,28 @@ namespace UnityStandardAssets.Vehicles.Car
         private void FixedUpdate()
         {
             // pass the input to the car!
-            float h = Input.GetAxis("Horizontal");
-            float v = Input.GetAxis("Vertical") * multiplier;
-            m_Car.Move(h, v, v, 0);
+            if(isDischarged == false)
+            {
+                float h = Input.GetAxis("Horizontal");
+                float v = Input.GetAxis("Vertical") * multiplier;
+                m_Car.Move(h, v, v, 0);
+            }
+            else
+            {
+                m_Car.Move(0, 0, 0, 0);
+                foreach (var item in GetComponents<AudioSource>())
+                {
+                    item.Stop();
+                }
+            }
+
+
+        }
+
+        public void Discharge()
+        {
+            Debug.Log("IsD");
+            isDischarged = true;
         }
     }
 }
