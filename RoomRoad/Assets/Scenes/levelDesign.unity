@@ -7670,6 +7670,11 @@ Prefab:
       propertyPath: m_Name
       value: desk
       objectReference: {fileID: 0}
+    - target: {fileID: 23000010780008730, guid: 4c84f96a67d394a4c84e75fb2e1c1394,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad2b43ebf0988504881f8cd1a1fb618a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c84f96a67d394a4c84e75fb2e1c1394, type: 2}
   m_IsPrefabParent: 0
