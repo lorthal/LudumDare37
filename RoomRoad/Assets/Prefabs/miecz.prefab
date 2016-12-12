@@ -39,7 +39,7 @@ GameObject:
   - 4: {fileID: 4000013741355116}
   - 33: {fileID: 33000012145711216}
   - 23: {fileID: 23000012994015682}
-  - 64: {fileID: 64000012202278892}
+  - 65: {fileID: 65000010608641080}
   m_Layer: 0
   m_Name: raczka
   m_TagString: Untagged
@@ -88,7 +88,7 @@ GameObject:
   - 4: {fileID: 4000010314699958}
   - 33: {fileID: 33000012706946136}
   - 23: {fileID: 23000011835651550}
-  - 64: {fileID: 64000011886433008}
+  - 65: {fileID: 65000013404154798}
   m_Layer: 0
   m_Name: ostrze
   m_TagString: Untagged
@@ -135,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011172752078}
   m_LocalRotation: {x: -0.052024696, y: -0.03955955, z: -0.6579423, w: 0.750227}
-  m_LocalPosition: {x: 56.4, y: 115.2, z: -91.825165}
+  m_LocalPosition: {x: 61.2, y: 114.7, z: -91.3}
   m_LocalScale: {x: 100, y: 100.00006, z: 100.00006}
   m_LocalEulerAnglesHint: {x: -58.54, y: 90.73, z: -86.762}
   m_Children:
@@ -150,8 +150,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012750029994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.048, y: 0, z: 0}
-  m_LocalScale: {x: 0.09337509, y: 0.09337508, z: 0.09337508}
+  m_LocalPosition: {x: -0.048, y: 0.029, z: -0}
+  m_LocalScale: {x: 0.09337509, y: 0.120974876, z: 0.09337508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012527445158}
@@ -177,7 +177,7 @@ Transform:
   m_GameObject: {fileID: 1000011053800758}
   m_LocalRotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
   m_LocalPosition: {x: -101.28692, y: 134.89165, z: -204.01886}
-  m_LocalScale: {x: 385.65115, y: 100, z: 100}
+  m_LocalScale: {x: 385.65115, y: 67.076965, z: 100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000014270639196}
@@ -342,30 +342,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011999107082}
   m_Mesh: {fileID: 4300000, guid: ebaa7015e1a60244abe8c89292b33b1a, type: 3}
---- !u!64 &64000011886433008
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011999107082}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: ebaa7015e1a60244abe8c89292b33b1a, type: 3}
---- !u!64 &64000012202278892
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011053800758}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300004, guid: ebaa7015e1a60244abe8c89292b33b1a, type: 3}
 --- !u!64 &64000012459124850
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -378,6 +354,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: ebaa7015e1a60244abe8c89292b33b1a, type: 3}
+--- !u!65 &65000010608641080
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011053800758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030647721, y: 0.03838677, z: 0.17694803}
+  m_Center: {x: -0.000000011011075, y: 0.0000000029512042, z: -0.08847401}
 --- !u!65 &65000012945543972
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -390,6 +378,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65000013404154798
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011999107082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.69982725, y: 0.060000002, z: 0.013644771}
+  m_Center: {x: -0.34991476, y: -0.000898607, z: 0.0000000095460555}
 --- !u!95 &95000010964586744
 Animator:
   serializedVersion: 3
