@@ -42,7 +42,9 @@ public class EnergyController : MonoBehaviour {
 
     public void RechargeBattery()
     {
-        energyCurrentAmount += 40.0f;
+        energyCurrentAmount += 30.0f;
+        if (energyCurrentAmount > energyMaxAmount)
+            energyCurrentAmount = energyMaxAmount;
     }
 
     public float GetEnergyAmount()
