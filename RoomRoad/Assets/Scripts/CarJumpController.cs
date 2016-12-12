@@ -21,7 +21,7 @@ public class CarJumpController : MonoBehaviour {
 
     void Update()
     {
-        Debug.Log(isGrounded.ToString());
+        
     }
 
     //make sure u replace "floor" with your gameobject name.on which player is standing

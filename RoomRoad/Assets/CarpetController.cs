@@ -21,13 +21,12 @@ public class CarpetController : MonoBehaviour {
         {
             //collider.GetComponent<CarUserControl>().multiplier = 0.2f;
             var wheels = collider.gameObject.GetComponent<CarController>().WheelColliders;
-            Debug.Log("Carpet");
             foreach (var item in wheels)
             {
                 WheelFrictionCurve sFriction = item.sidewaysFriction;
                 WheelFrictionCurve fFriction = item.forwardFriction;
-                sFriction.stiffness = 0.5f;
-                fFriction.stiffness = 0.5f;
+                sFriction.stiffness = 0.3f;
+                fFriction.stiffness = 0.3f;
                 item.sidewaysFriction = sFriction;
                 item.forwardFriction = fFriction;
             }
@@ -39,13 +38,12 @@ public class CarpetController : MonoBehaviour {
         if (collider.tag == "Player")
         {
             var wheels = collider.gameObject.GetComponent<CarController>().WheelColliders;
-            Debug.Log("Carpet");
             foreach (var item in wheels)
             {
                 WheelFrictionCurve sFriction = item.sidewaysFriction;
                 WheelFrictionCurve fFriction = item.forwardFriction;
-                sFriction.stiffness = 10.0f;
-                fFriction.stiffness = 10.0f;
+                sFriction.stiffness = 1.0f;
+                fFriction.stiffness = 1.0f;
                 item.sidewaysFriction = sFriction;
                 item.forwardFriction = fFriction;
             }
