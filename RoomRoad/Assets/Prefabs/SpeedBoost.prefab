@@ -586,9 +586,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e3725e18e96b9468229dc99b4ab01b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boosterEnabled: 1
   boostSpeed: 1500
   startTrigger: {fileID: 1000011588555824}
   endTrigger: {fileID: 1000012352100092}
+  borderParticle:
+  - {fileID: 198000010732346456}
+  - {fileID: 198000012306157938}
+  boostParticle: {fileID: 198000011632354616}
 --- !u!114 &114000012478612252
 MonoBehaviour:
   m_ObjectHideFlags: 1
