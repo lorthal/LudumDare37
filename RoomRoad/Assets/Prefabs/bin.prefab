@@ -9,45 +9,74 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000011504768400}
+  m_RootGameObject: {fileID: 1000010567464020}
   m_IsPrefabParent: 1
---- !u!1 &1000011504768400
+--- !u!1 &1000010567464020
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000010237662962}
-  - 33: {fileID: 33000013640164540}
-  - 23: {fileID: 23000012967983650}
-  - 95: {fileID: 95000013177309002}
+  - 4: {fileID: 4000011378928162}
   m_Layer: 0
-  m_Name: desk
+  m_Name: bin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000010237662962
+--- !u!1 &1000011245017206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010285789474}
+  - 33: {fileID: 33000013295632514}
+  - 23: {fileID: 23000013734958494}
+  - 95: {fileID: 95000013553297462}
+  m_Layer: 0
+  m_Name: bin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010285789474
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011504768400}
-  m_LocalRotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
-  m_LocalPosition: {x: -39.3, y: 36, z: 224.1}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_GameObject: {fileID: 1000011245017206}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.679865, y: -11.66679, z: 16.298035}
+  m_LocalScale: {x: 100, y: 100.00006, z: 100.00006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
+  m_Father: {fileID: 4000011378928162}
+  m_RootOrder: 0
+--- !u!4 &4000011378928162
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010567464020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.9201355, y: 11.66679, z: 262.40198}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000010285789474}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &23000012967983650
+--- !u!23 &23000013734958494
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011504768400}
+  m_GameObject: {fileID: 1000011245017206}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -55,7 +84,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e9c5999ffa847bf40991e90c9bcc1b93, type: 2}
+  - {fileID: 2100000, guid: 58180e466dcf221448a2f10b60ed164d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -71,22 +100,22 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000013640164540
+--- !u!33 &33000013295632514
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011504768400}
-  m_Mesh: {fileID: 4300000, guid: 25f76188c7e78be4ababa7c96714e5d2, type: 3}
---- !u!95 &95000013177309002
+  m_GameObject: {fileID: 1000011245017206}
+  m_Mesh: {fileID: 4300000, guid: b4ea4d0986571984b9e9092ea76d76f3, type: 3}
+--- !u!95 &95000013553297462
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011504768400}
+  m_GameObject: {fileID: 1000011245017206}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 25f76188c7e78be4ababa7c96714e5d2, type: 3}
+  m_Avatar: {fileID: 9000000, guid: b4ea4d0986571984b9e9092ea76d76f3, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
