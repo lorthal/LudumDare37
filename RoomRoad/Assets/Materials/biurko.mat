@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: bookshelf
+  m_Name: biurko
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: 01360872ed5444f49b899f98cb22552a, type: 3}
+        m_Texture: {fileID: 2800000, guid: e9e467571813f704786725b50992cd08, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -48,19 +48,19 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 3dd99786f8494ba47bc9f74f17ff7b8b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1b0824b4e7f20c3489a5698dd2fc6a8b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: 68f7f79addc1891408e70405f2693b2f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2359929c5235d5d4bb213311257b2bef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _OcclusionMap
       second:
-        m_Texture: {fileID: 2800000, guid: 4c9df0244bcb9c54b9b2d1f3cbfd1e7d, type: 3}
+        m_Texture: {fileID: 2800000, guid: e2c5653ce74c65b4fa5fede2ea267f06, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
