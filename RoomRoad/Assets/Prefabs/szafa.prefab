@@ -146,6 +146,7 @@ GameObject:
   - 33: {fileID: 33000011754493590}
   - 23: {fileID: 23000014173613212}
   - 64: {fileID: 64000011427890652}
+  - 64: {fileID: 64000013606933648}
   m_Layer: 0
   m_Name: szafa
   m_TagString: Untagged
@@ -335,7 +336,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b44734b131dcc0d4fb298e536d1708cf, type: 2}
+  - {fileID: 2100000, guid: acc54c359d54c8341b5426ad01e9f233, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -523,6 +524,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: 07ac6ae2f72914345b373164d9a7a6ae, type: 3}
+--- !u!64 &64000013606933648
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013922967888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 07ac6ae2f72914345b373164d9a7a6ae, type: 3}
 --- !u!64 &64000013663309884
 MeshCollider:
   m_ObjectHideFlags: 1
