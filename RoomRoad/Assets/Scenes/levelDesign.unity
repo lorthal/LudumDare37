@@ -129,6 +129,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013309179178, guid: edddfd876a136244f9bd68d6fbf9d3bd,
+        type: 2}
+      propertyPath: gameResultText
+      value: 
+      objectReference: {fileID: 937247853}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edddfd876a136244f9bd68d6fbf9d3bd, type: 2}
   m_IsPrefabParent: 0
@@ -7283,6 +7288,12 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!114 &937247853 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013128427144, guid: f8b02f5e511219f4db449fa67e7105ae,
+    type: 2}
+  m_PrefabInternal: {fileID: 1007909049}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &940563290
 Prefab:
   m_ObjectHideFlags: 0
@@ -10411,6 +10422,16 @@ Prefab:
     - target: {fileID: 4000011500941444, guid: 11bd529156d6c514da167094e6fa93f7, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 16.057001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012651806096, guid: 11bd529156d6c514da167094e6fa93f7,
+        type: 2}
+      propertyPath: gameResultText
+      value: 
+      objectReference: {fileID: 937247853}
+    - target: {fileID: 114000012651806096, guid: 11bd529156d6c514da167094e6fa93f7,
+        type: 2}
+      propertyPath: energyMaxAmount
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11bd529156d6c514da167094e6fa93f7, type: 2}
