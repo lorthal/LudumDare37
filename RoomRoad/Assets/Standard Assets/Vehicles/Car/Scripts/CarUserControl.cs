@@ -13,6 +13,8 @@ namespace UnityStandardAssets.Vehicles.Car
 
         bool isDischarged = false;
 
+        [SerializeField]
+        Animator cameraAnimator;
 
         private void Awake()
         {
@@ -28,7 +30,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private void FixedUpdate()
         {
             // pass the input to the car!
-            if(isDischarged == false)
+            if(!isDischarged || cameraAnimator.GetCurrentAnimatorStateInfo(0).IsName("IdleCam"))
             {
                 float h = Input.GetAxis("Horizontal");
                 float v = Input.GetAxis("Vertical") * multiplier;
