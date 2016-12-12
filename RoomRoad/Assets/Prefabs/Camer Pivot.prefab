@@ -39,6 +39,7 @@ GameObject:
   - 92: {fileID: 92000010192984084}
   - 124: {fileID: 124000010921044764}
   - 81: {fileID: 81000012389763894}
+  - 95: {fileID: 95000010704261482}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -52,10 +53,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012781240972}
-  m_LocalRotation: {x: 0.13424559, y: -0, z: -0, w: 0.9909481}
-  m_LocalPosition: {x: 0, y: 8.99, z: -17.31}
+  m_LocalRotation: {x: 0.15587783, y: -0.0020814273, z: 0.0045221467, w: 0.9877639}
+  m_LocalPosition: {x: -0.00000023841858, y: 8.990021, z: -17.309998}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 15.43, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.889, y: -0.158, z: 0.48400003}
   m_Children: []
   m_Father: {fileID: 4000013883077662}
   m_RootOrder: 0
@@ -65,10 +66,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010208209368}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.8, y: 1.6, z: -53.2}
+  m_LocalRotation: {x: -0.92519104, y: -0.0196457, z: 0.35118744, w: -0.14248867}
+  m_LocalPosition: {x: 18.7, y: 5.57, z: -82.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.057001, y: -137.75401, z: 183.69398}
   m_Children:
   - {fileID: 4000012217724734}
   m_Father: {fileID: 0}
@@ -121,6 +122,23 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012781240972}
   m_Enabled: 1
+--- !u!95 &95000010704261482
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012781240972}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c53482b7b1c14f2408e94595c845eaeb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114000012596389644
 MonoBehaviour:
   m_ObjectHideFlags: 1
