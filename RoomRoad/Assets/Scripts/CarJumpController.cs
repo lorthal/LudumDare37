@@ -25,20 +25,20 @@ public class CarJumpController : MonoBehaviour {
     }
 
     //make sure u replace "floor" with your gameobject name.on which player is standing
-    void OnTriggerStay(Collider coll)
-    {
-        if (coll.gameObject.tag == "floor")
-        {
-            foreach (var i in tires)
-            {
-                if (i.GetComponent<WheelJumpTrigger>().GetCollided() == false)
-                    break;
+    //void OnTriggerStay(Collider coll)
+    //{
+    //    if (coll.gameObject.tag == "floor")
+    //    {
+    //        foreach (var i in tires)
+    //        {
+    //            if (i.GetComponent<WheelJumpTrigger>().GetCollided() == false)
+    //                break;
 
-                isGrounded = true;
-            }
+    //            isGrounded = true;
+    //        }
             
-        }
-    }
+    //    }
+    //}
 
     //consider when character is jumping .. it will exit collision.
     void OnTriggerExit(Collider coll)
@@ -55,7 +55,7 @@ public class CarJumpController : MonoBehaviour {
         while (true)
         {
             
-            if (Input.GetButtonDown("Jump") && isGrounded == true && currentState == JumpState.Idle)
+            if (Input.GetButtonDown("Jump") && isGrounded == true && currentState == JumpState.Idle && !GetComponent<EnergyController>().IsDischarged())
             {
                 gameObject.GetComponent<Rigidbody>().velocity = new Vector3(gameObject.GetComponent<Rigidbody>().velocity.x, 0 , gameObject.GetComponent<Rigidbody>().velocity.z);
                 currentState = JumpState.isJumping;

@@ -18,7 +18,7 @@ public class EnergyController : MonoBehaviour {
         energyCurrentAmount -= Time.deltaTime;
         if (energyCurrentAmount <= 0)
         {
-            Debug.Log("Trying to dscharge");
+            discharged = true;
             GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControl>().Discharge();
         }
 
@@ -26,7 +26,7 @@ public class EnergyController : MonoBehaviour {
 
     public void RechargeBattery()
     {
-        energyCurrentAmount += 20.0f;
+        energyCurrentAmount += 40.0f;
     }
 
     public float GetEnergyAmount()

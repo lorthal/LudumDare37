@@ -42,13 +42,10 @@ namespace UnityStandardAssets.Vehicles.Car
                     item.Stop();
                 }
             }
-
-
         }
 
         public void Discharge()
         {
-            Debug.Log("IsD");
             isDischarged = true;
         }
     }

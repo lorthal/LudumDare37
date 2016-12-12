@@ -25,7 +25,7 @@ public class FlipCar : MonoBehaviour {
     {
         while (true)
         {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R) && !GetComponent<EnergyController>().IsDischarged())
             {
                 rb.velocity = Vector3.zero;
                 Vector3 targetPos = new Vector3(rb.transform.position.x, rb.transform.position.y + 1, rb.transform.position.z);
