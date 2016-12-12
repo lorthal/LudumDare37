@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets;
+using UnityEngine.UI;
 
 public class EnergyController : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class EnergyController : MonoBehaviour {
     [SerializeField]
     Animator particleAnimator;
     [SerializeField] ParticleSystem particle;
+
+    public Text gameResultText;
 
     bool particlePlay = false;
 
@@ -36,6 +39,8 @@ public class EnergyController : MonoBehaviour {
                 particle.Stop();
                 particleAnimator.Stop();  
             }
+            gameResultText.gameObject.SetActive(true);
+            gameResultText.text = "You Lost!";
         }
 
 	}
