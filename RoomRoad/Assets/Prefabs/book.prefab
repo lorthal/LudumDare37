@@ -39,6 +39,7 @@ GameObject:
   - 95: {fileID: 95000010273111358}
   - 65: {fileID: 65000011436160788}
   - 54: {fileID: 54000012370699734}
+  - 114: {fileID: 114000013460764282}
   m_Layer: 0
   m_Name: book
   m_TagString: Untagged
@@ -153,3 +154,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000013460764282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014024339122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9beacda2d4ed0ac4c893ae90730a7e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat1: {fileID: 2100000, guid: d639a4c9205aa0542b1e7185872dc83a, type: 2}
+  mat2: {fileID: 2100000, guid: 5260fd10d4762cf47935b49636fa06a4, type: 2}
+  mat3: {fileID: 2100000, guid: dc5163fe865e6194dbb3e1978b6b8f82, type: 2}
+  mat4: {fileID: 2100000, guid: 893074a404caca749a35fdebbbe6f6b0, type: 2}
+  mat5: {fileID: 2100000, guid: 1deda0686116fba4aa67f501c571721b, type: 2}
+  mat6: {fileID: 2100000, guid: f7ff7cdf3c8bc744b80a8d6409aaac2b, type: 2}
+  mat7: {fileID: 2100000, guid: c5ed906e4ca87844f9564b66547b59ce, type: 2}
