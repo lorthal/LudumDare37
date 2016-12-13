@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ChargerTrigger : MonoBehaviour {
 
     public Text gameResultText;
+    public GameObject canvas;
 
     void OnTriggerEnter(Collider coll)
     {
@@ -12,6 +13,7 @@ public class ChargerTrigger : MonoBehaviour {
         {
             gameResultText.gameObject.SetActive(true);
             gameResultText.text = "You Won!";
+            canvas.GetComponent<GameControlls>().DisableCount();
         }
     }
 }
