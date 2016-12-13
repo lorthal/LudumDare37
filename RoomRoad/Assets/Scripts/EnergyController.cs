@@ -25,7 +25,7 @@ public class EnergyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && Camera.main.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleCam"))
         {
             RPressed = true;
         }
