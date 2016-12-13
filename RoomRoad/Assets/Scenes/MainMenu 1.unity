@@ -584,7 +584,7 @@ GameObject:
   - 114: {fileID: 425383701}
   - 114: {fileID: 425383704}
   m_Layer: 5
-  m_Name: ExitButton
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -596,10 +596,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 425383699}
-  m_LocalRotation: {x: 0.0071098725, y: 0.27151537, z: 0.025192877, w: 0.9620781}
+  m_LocalRotation: {x: 0.00764247, y: 0.29185444, z: 0.025036454, w: 0.95610446}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
-  m_LocalEulerAnglesHint: {x: 0, y: 31.52, z: 3}
+  m_LocalEulerAnglesHint: {x: 0, y: 33.95, z: 3}
   m_Children:
   - {fileID: 1963664111}
   m_Father: {fileID: 1044781646}
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0}
-    m_HighlightedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0.216}
+    m_HighlightedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0.247}
     m_PressedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -649,7 +649,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 425383704}
-        m_MethodName: EndButton
+        m_MethodName: BackButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -795,7 +795,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d63d42284be8cec4e9208153e36a9054, type: 2}
+  - {fileID: 2100000, guid: 3c3b562a20b0053458c94d611748b846, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -1311,24 +1311,23 @@ GameObject:
   - 222: {fileID: 971022779}
   - 114: {fileID: 971022778}
   - 114: {fileID: 971022777}
-  - 114: {fileID: 971022780}
   m_Layer: 5
   m_Name: AboutButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &971022776
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 971022775}
-  m_LocalRotation: {x: 0.0071098725, y: 0.27151537, z: 0.025192877, w: 0.9620781}
+  m_LocalRotation: {x: 0.00764247, y: 0.29185444, z: 0.025036454, w: 0.95610446}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
-  m_LocalEulerAnglesHint: {x: 0, y: 31.52, z: 3}
+  m_LocalEulerAnglesHint: {x: 0, y: 33.95, z: 3}
   m_Children:
   - {fileID: 930773337}
   m_Father: {fileID: 1044781646}
@@ -1358,8 +1357,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0}
-    m_HighlightedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0.216}
-    m_PressedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 1}
+    m_HighlightedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0.247}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1376,18 +1375,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 971022778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 971022780}
-        m_MethodName: AboutButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &971022778
@@ -1402,7 +1390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1423,17 +1411,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 971022775}
---- !u!114 &971022780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 971022775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 222d8d42ecf5bab4cb48c7c54de92ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1013627412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,24 +2220,23 @@ GameObject:
   - 222: {fileID: 1518163909}
   - 114: {fileID: 1518163908}
   - 114: {fileID: 1518163907}
-  - 114: {fileID: 1518163910}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1518163906
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1518163905}
-  m_LocalRotation: {x: 0.0071098725, y: 0.27151537, z: 0.025192877, w: 0.9620781}
+  m_LocalRotation: {x: 0.00764247, y: 0.29185444, z: 0.025036454, w: 0.95610446}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
-  m_LocalEulerAnglesHint: {x: 0, y: 31.52, z: 3}
+  m_LocalEulerAnglesHint: {x: 0, y: 33.95, z: 3}
   m_Children:
   - {fileID: 357623864}
   m_Father: {fileID: 1044781646}
@@ -2290,8 +2266,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0}
-    m_HighlightedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0.216}
-    m_PressedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 1}
+    m_HighlightedColor: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 0.247}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2309,12 +2285,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1518163910}
-        m_MethodName: StartButton
+      - m_Target: {fileID: 1518163905}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2334,7 +2310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.40000004, g: 0.054901965, b: 0.04705883, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2355,17 +2331,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1518163905}
---- !u!114 &1518163910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1518163905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 222d8d42ecf5bab4cb48c7c54de92ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1611713114
 Prefab:
   m_ObjectHideFlags: 0
@@ -2644,7 +2609,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: Back
 --- !u!222 &1963664113
 CanvasRenderer:
   m_ObjectHideFlags: 0
